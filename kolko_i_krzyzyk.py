@@ -23,12 +23,6 @@ def kolumna():
             print("Proszę podać liczbę całkowitą.")
 
 
-def wprowadzanie_x (tab):
-    w = wiersz() - 1
-    k = kolumna() - 1
-    if tab[w][k] == " ":
-        tab[w][k] = "X"
-    else:
 
 
 def wprowadzanie_o (tab):
