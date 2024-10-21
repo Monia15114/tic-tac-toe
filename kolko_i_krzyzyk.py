@@ -24,20 +24,24 @@ def kolumna():
 
 
 def wprowadzanie_x (tab):
-    w = wiersz() - 1
-    k = kolumna() - 1
-    if tab[w][k] == " ":
-        tab[w][k] = "X"
-    else:
+    while True:
+        w = wiersz() - 1
+        k = kolumna() - 1
+        if tab[w][k] == " ":
+            tab[w][k] = "X"
+            break
+        else:
+            print("Te pole jest już zajęte. Wybierz inne.")
+
 
 
 def wprowadzanie_o (tab):
     while True:
-        w = random.randrange(0,2)
-        k = random.randrange(0,2)
+        w = random.randrange(0,3)
+        k = random.randrange(0,3)
+        print (w,k)
         if tab[w][k] == " ":
-            tab[w][k] = "0"
-            print (w,k)
+            tab[w][k] = "O"
             break
 
 
